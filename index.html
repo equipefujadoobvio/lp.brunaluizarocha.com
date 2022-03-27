@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/com.css">
+
+    <!-- Título da Página -->
+    <title>Protocolo Zero Barriga</title>
+    
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Sxuja9tdWE0Pjla2VmTZkDHE1eC3zz4t4zk-0zqKYn7q43GUwEW4Pee9Av8vJ4KJuXqkZ1frWD_gqoAlP0Ama8UG21ZXvlV3mQmi3Ce8XJ6_QCk18Wr2nqkOlEJV0-FLbcpS-_L0sScfN_6gNFTLZpTU2Bua7gL-zehlQ0PeX9_ZNj99iAkjaj7NpJXYxujQ6f62Bs0mJpT0nuu7vnGddx0bVF53lsP4mzVlwBVFBVvVGGqU3d6Wr-jyZSInHNf5KpiML_Vh9l8JWQcYXlejgsYC5Bd-tnnV1w7NvJIzew65tmypQfJRaBh2MQcHSk84Nrm0cFL2oWmqNTVgsXBevlYFa18KfHsy7ePv4TPHzq3fOM8crRmB8pdZC65vO7FsvUJSbo01cOHCDRWdwPamUQod3TE1CubNiBNnwYmxak43W5Sbm1g9AVQiSyBLmELXkYe_50wDiMTvd-XdRpQUwsY060-WVfN9CWjuoNLc2eaV2ULfCfvh-NsiaP666X3_Xly_SxMq3SK_JLJsyeEuihPLB5w1usjq778WbSzt8-EK3gOz5ZOL_6vL7OStPHvpnGvut7nTTkxnBD3Xpg2hvjd0KjZBsJBOKAPyUF-2Tfd8chUfEwnqE6hompE8faPygUCQdx20fyv8mrUKc2bS1i0wdO-ljbx3Am5vlqX1ijAuyjqxseMEYLSEoA2U3LKRr70Hq1XMKI8z8_wzcqhJx7GjUSE78OGr8Qprf8SZ-E9ZZBvioHQ85E68Cj8dk-owJ4cXzhIhDRabHyclTj50CsOC5z2YMbfFyC5IStyxVzBvpmaWUaXA1oXm5kp8MCDAu8n6Xe-VxMmxKUf3t_s9qFEPQ0yrquMwDp5Y1KGdxBqcA2BzXQwvcVtOKV6T2UsTQrwG4oah4DpCBR40OTBky1V1ZFGe4TKCXcyjmaNx7pO03JUlfbc3Yi8531lLs47PkOjaOoqGWPt_CTqkSvakDSkMCsciVwBnlQ-cWW0x7bcq_njE-QhphNZ8oX5hqZmSi4vKdofhBOaeJpYe6gQCl8NWoqjJ0E7gEa1Jo6jkjislru6-SrssUvsFme5PLnlshXDlpDZFK3ykI7-wYA-jix9tVs6f0JjS8u7huicFLyo9Su0L_mBdTYTdH4jasIqP34bSRCjmdMyumerC6NaWJVZeNU2KsHu7GSuuXIq0AGgS0gMytzI2zjt2Pn9F25np1-3Zg-3QlKI1_OmtWcdDptp60zBtnJxlZSSKr-MWkd8q0Wm7nBm250G2976U4jfzhEZrTIN5cmYrjf3PhQCkj_mSm2wh1QyhC-JElVLATlKVoBEMIQY-kUhE1N-FFHf3fazx6eTXc9MsGMaztzUL14J8Y1dzVlUba-ZyWTUMVFBLR6daaHpVYj0qQjI82gDdQVJfILuGA3dhiGOhAA_vGvAcUf7i8OJC9fezFv15B7_x6lvJQR35U3yUUC9LhfQ_cZzMIsHF9AiEC_flRf5UjN2IJZVfzksSjFZhsfUVdoI" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMG8tYzAtZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9xams0cGdzcmxsbmZpc280YWVzN2o1c3VoczR0Yjl0Yi9ub2l0Ym90MXM1cWhwOWdxNjFzaDMxM21xZW5rZWMwOC8xNjQ4Mjk0MTI1MDAwLzA2MTYzOTQ0MDcwNTM2NzQwODcwLzA3NTM4MjQ1NDk2Nzc5NzYxNTUzLzFtdS1qSkY1aE1kZW5HQnVNb1RNb0NSV0hyWDJvblNVMz9lPWRvd25sb2FkJmF4PUFDeEVBc1lhbnhPSHYzbkFSVGRnejVZX2FoMGtmalRXMDNobDFMWGtscWhiXzY3ZEp0TXVlbjlSSUZsRUhvVExxeXU0S2JQVlRLUkdtYlpBbFV6c1JyZTJFb1NSTk1YaWZTbG5DN0twdWVaTkNISjBFMUNnVTlkN3d5em42bGFWV1dSRk50d1R3SFBWa1UzamNvTVg0c2F2X1pfU1B4YUlNVlZRdnY3Z2F4OVlKMjdyOS1GdkFaNzVUUDVBT2ItYVg1WkdNcmhtaWxZVUd3XzV5ZGJZdFBILUhPcDFwSVRQMUQ4Mk04aFFEUldVb1llNWpfeTFqWlg4czdYUXFsODROQ3VJb1UycHFFZjN5Z3RBR3dXT3dZZGhka2tDYW9Ub2ZPcWxlZmRlbHprbDZfeHFoaEYtR04ydmRmWDAxU1hSbHVuMzRmZlpoZ1F5SkluZlRuYU1JSFdUc2U2bFBKdEZJN3J1clp1aV8tMHFTX0tFaS1XNktiN3pScndieTR3SUhnclBmN1ZpNVFsOWFBTmZBZGQ2WVNFUDktVkdvRUU0R3Z4Y2pBTHZXT0JhLTBaaUJvdEE3Q3VubU1rTzFsUzBaYm5nRTNFcXYtQ2s3TjZuZ0tfN2lfVTRFWE5yVEdkM2Y4OHlNdmo4cFh5Yk9YYlRfWXo1V0xNejBzRDVtb2VabEhQc29VNFBnZXkzNm5MMjZtNlhVelZDcVF1TU5NLXlaT3lyb2xHbmtZakVJTUJESzBFNEJzcTR2Y19YTHFqSnVVQkIzOHM5OW9mNGdtT3F1aC15LTRLcEJ4RXE4eUxfa0dLangzak9TUzBUdzNDdEtxV3lmc1BlMXR1aTJXTjZ6SGF2OHZCQ2JDRmtqVE4zLXd4T05sb0FaZEE1SnZjNUR5d0tsRndoS2x2TWtrVG5Cd3dIZl9ZZkw2YjZJX0J5X1lCQ0dQYVQzUi0yQ2QyNG9yYmFULWdVdHY2OER1QTlKS2FySjFpV0IyeXU2RENzZWIxWGszTFRiY1lYcHRoNElMVm1tSF9VSHRZR0FwZEZUenFqZ0pMYlZRJmF1dGh1c2VyPTAmbm9uY2U9cjdrazd1YmdrcTB0cSZ1c2VyPTA3NTM4MjQ1NDk2Nzc5NzYxNTUzJmhhc2g9OGdycm9lc3U5dXAxdW5rYXQxMGsxbzMxN2YxN3B0ZnY"/><style type="text/css">
+      header {
+        color: white;
+        background-image: url("assets/img/bg.jpeg");
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+      }
+    </style>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '671840113939919');
+      fbq('init', '902207957134621');
+      fbq('init', '1060746161440914');
+      fbq('init', '649325786402999');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=671840113939919&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+  </head>
+  <body>
+    
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <!-- Imagem Ultrasecreto -->
+            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
+
+            <!-- Headline -->
+            <h3 class="my-4"><b>6 Ingredientes Simples Que Fazem O Corpo Queimar Até 10Kg Em 30 Dias</b></h3>
+
+            <!-- VSL -->
+            <script type="text/javascript" id="scr_62279575aa8f7e00086fa73e">var s=document.createElement("script");s.src="https://cdn.converteai.net/ccdae62e-116b-492f-9648-160a0c5bfcc3/players/62279575aa8f7e00086fa73e/player.js",s.async=!0,document.head.appendChild(s);</script>
+
+            <!-- Botão 1 -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="comments py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="fb-comments" style="margin-top: 5px;">
+              <div class="fb-comments-header">
+                <span>21 comentarios</span>
+              </div>
+              <div class="fb-comments-wrapper" id="2">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m2.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Valesca Silva</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em processo de emagrecimento. Muito obrigada 😘</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>8</likes>
+                        
+                        <date>4 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="3">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m3.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Vitória Pereira</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Ele também me ajudou perdi 22kg obrigado, e ajuda até hoje com essas receitas deliciosas</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>9</likes>
+                        
+                        <date>5 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="4">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m4.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Mariana Martins</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Esse vídeo mudou minha vida, já são 20 kilos a menos em 4 meses ,agradecida</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>11</likes>
+                        
+                        <date>12 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="5">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m5.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Juliana Castro</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Tomei essa vitamina durante 1 mês, acompanhada da dieta de açúcar e carboidratos, perdir 5 quilos, e me sentia bem melhor, faz um ano, agora vou voltar a tomar novamente.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>15</likes>
+                        
+                        <date>19 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="6">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m6.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Isabella Lopes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Estou feliz, a 7 meses atrás eu estava com 78kg e hoje estou com 54kg até postei a respeito no meu perfil aqui no face o antes e depois 😘😘😘</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>17</likes>
+                        
+                        <date>24 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="7">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m7.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Roberta Gomes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Realmente funciona, minha barriga tem diminuído a cada dia. Obrigada por compartilhar 🥰</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>18</likes>
+                        
+                        <date>26 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="9">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m11.jpeg">
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Rafaela Souza</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Emagrece mesmo gente receita testada e aprovada</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>22</likes>
+                        
+                        <date>39 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 5 comentários</button>
+              <div style="display:none" id="more">
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="10">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m12.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Ana Sofia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Maravilhosa melhor de todas fez 7dias tomando e 7 klos já conseguir eliminar tô muito feliz obrigado 😍😍😍</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>41</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="11">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m15.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Laura Flores</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Eu já estou tomando, já eliminei 7 kls, já fez muita diferença, minhas roupas estavam todas apertadas,  ágora já estão largas, estou num pós operatório de coluna por isso engordei muito 15 Kg, estava sentindo muita dor agora amenizou muito depois que emagreci já consigo andar mais q antes 🙏🙏🙏🙏🙏🙏</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>40</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="12">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m16.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Daniela Costa</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Muito Obrigada tem me ajudado e muito,Adorei ...Durmo super bem e vendo resultado ..🌹🥰🙋</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>47</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="13">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m17.jpeg"></td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Juliana Dias</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Em duas semanas comecei a ver resultados, muito bom</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>50</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="14">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m18.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Isabelle Correia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Meu irmão perdeu 6 kl em 15 dias... vou começar hj rsrs</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>66</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Botão 2 -->
+            <div id="cta2" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    </footer>
+
+    <script type="text/javascript">
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1637000); // temporização da Call to Action (em milissegundos)
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+  </body>
+</html>
